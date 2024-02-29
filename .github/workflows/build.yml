@@ -34,4 +34,4 @@ jobs:
         run: echo 'Using ${{ github.ref_name }}'
       - name: "Use var and secret from env"
         shell: bash
-        run: echo '${{ vars.USERNAME }}:${{ secrets.PASSWORD}}'
+        run: echo '${{ vars.API_URL }}:${{ secrets.API_KEY }}'
