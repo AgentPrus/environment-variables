@@ -1,3 +1,15 @@
+name: "Test workflow"
+on:
+  push:
+    branches:
+      - main
+      - stage
+      - develop
+    pull_request:
+      branches:
+        - main
+        - stage
+        - develop
 jobs:
   get_target_env:
     name: "Get current environment"
